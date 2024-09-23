@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cat.css">
+    <title>Indoor Plants</title>
+</head>
+<body>
+    <header>
+        <h1>Indoor Plants</h1>
+        <p>Bring Nature Indoors</p>
+        <input type="text" placeholder="Search for your favorite plants...">
+        <div class="filters">
+            <h3>Filters</h3>
+            <label>Plant Type: 
+                <select>
+                    <option>Foliage</option>
+                    <option>Succulents</option>
+                    <option>Cacti</option>
+                    <option>Flowers</option>
+                </select>
+            </label>
+            <label>Light Requirements: 
+                <select>
+                    <option>Low Light</option>
+                    <option>Medium Light</option>
+                    <option>Bright Light</option>
+                </select>
+            </label>
+            <label>Price Range: 
+                <input id="prices" type="range" min="0" max="100" value="50">
+                <div style="color: white;" id="show"></div>
+            </label>
+        </div>
+        <script>
+            var range= document.getElementById('prices').value;
+            let show=document.getElementById('show');
+           
+            show.addEventListener('input',()=>{
+                show.innerHTML="${range}"+range+"  ";
+            })
+            
+
+
+        </script>
+    </header>
+
+    <main>
+        <div class="plant-cards">
+            <div class="card">
+                <img src="snake-plant.jpg" alt="Snake Plant">
+                <h2>Snake Plant</h2>
+                <p>$25.00</p>
+                <p>★★★★☆ (120 reviews)</p>
+                <p>Low maintenance and purifies the air.</p>
+                <button>Add to Cart</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="pothos.jpg" alt="Pothos">
+                <h2>Pothos</h2>
+                <p>$15.00</p>
+                <p>★★★★★ (200 reviews)</p>
+                <p>Thrives in various lighting conditions; perfect for beginners.</p>
+                <button>Add to Cart</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="peace-lily.jpg" alt="Peace Lily">
+                <h2>Peace Lily</h2>
+                <p>$30.00</p>
+                <p>★★★★☆ (80 reviews)</p>
+                <p>Beautiful blooms; improves indoor air quality.</p>
+                <button>Add to Cart</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="zz-plant.jpg" alt="ZZ Plant">
+                <h2>ZZ Plant</h2>
+                <p>$40.00</p>
+                <p>★★★★☆ (60 reviews)</p>
+                <p>Very drought-tolerant; ideal for busy lifestyles.</p>
+                <button>Add to Cart</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="spider-plant.jpg" alt="Spider Plant">
+                <h2>Spider Plant</h2>
+                <p>$20.00</p>
+                <p>★★★★★ (150 reviews)</p>
+                <p>Hardy plant that produces baby plants easily.</p>
+                <button>Add to Cart</button>
+                <button>View Details</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Plant Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

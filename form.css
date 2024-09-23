@@ -1,0 +1,60 @@
+
+
+.flex-wrapper {
+    display: flex;
+    width: 90%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#formm {
+    height: 500px;
+    outline: 10px dotted green;
+    outline-offset: 5px;
+    transition: all 0.5s linear;
+    border: 10px ridge var(--green);
+    background-image: url(./images/pexels-iriser-1379636.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 1s linear;
+}
+#formm:hover {
+    outline: 10px dotted #73472a;
+    outline-offset: 10px;
+    transition: 1s linear;
+    
+}
+form div, input {
+    background-color: greenyellow;
+}
+input::placeholder {
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.right {
+    height: 500px;
+    width: 600px;
+    background: url(./images/pexels-iriser-971174.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 14px;
+    transition: all 0.5s linear;
+    border: 15px #9E3924 ridge;
+    outline: 10px dotted #3f0215;
+    outline-offset: 8px;
+    transition: 1s linear;
+}
+.right:hover {
+    background: url(./images/pexels-iriser-1233414.jpg);
+    background-size: cover;
+    background-position: center;
+    outline: 10px dotted #9E3924;
+    outline-offset: 15px;
+    border: 15px #3f0215 ridge;
+    transition: 1s linear;
+    transform: scale(1.02);
+}

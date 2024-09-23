@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-div{
+    background: url(./images/cat1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 270px;
+}
+.card-div p {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
